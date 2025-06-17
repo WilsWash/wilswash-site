@@ -1,0 +1,102 @@
+<!-- about.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us | Wils Wash</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header>
+        <a href="index.html">
+          <img src="images/Wils Wash Logo.png" alt="Wils Wash Pressure Washing Logo" class="logo" href="index.html">
+        </a>
+        <h1 class="site-title">About Us</h1>
+        <nav>
+          <a  href="index.html">Home</a>
+          <a href="services.html">Services</a>
+          <a href="about.html">About</a>
+          <a href="before-after.html">Before and Afters</a>
+          <a href="index.html#contact">Contact</a>
+        </nav>
+    </header>
+
+  <main>
+    <section class="carousel-section">
+        <div class="carousel-container">
+            <button class="carousel-btn prev">&#10094;</button>
+
+            <div class="carousel-images">
+                <img src="images/Hiking.jpeg" class="carousel-img active" alt="Lena and Taylor Hiking">
+                <img src="images/Horses.jpeg" class="carousel-img" alt="Riding Horses">
+                <img src="images/Horseshoe-Bend.jpeg" class="carousel-img" alt="At Horseshoe Bend">
+                <img src="images/Waterfall.jpeg" class="carousel-img" alt="Waterfall">
+                <img src="images/Wilson-Truck-Bed.jpeg" class="carousel-img" alt="Wilson Homemade Truck Bed">
+                <img src="images/Lena-Taylor-Stanky.JPG" class="carousel-img" alt="Lena and Taylor get Stanky">
+                <img src="images/Lena-Hiking.jpeg" class="carousel-img" alt="Lena on a Hike">
+                <img src="images/Taylor-on-Truck-Bed.jpeg" class="carousel-img" alt="Taylor on a Truck Bed">
+            </div>
+            <button class="carousel-btn next">&#10095;</button>
+        </div>
+        <script>
+            const images = document.querySelectorAll('.carousel-img');
+            const prevBtn = document.querySelector('.carousel-btn.prev');
+            const nextBtn = document.querySelector('.carousel-btn.next');
+          
+            let currentIndex = 0;
+            let intervalId;
+          
+            function showImage(index) {
+              images.forEach((img, i) => {
+                img.classList.toggle('active', i === index);
+              });
+            }
+          
+            function nextImage() {
+              currentIndex = (currentIndex + 1) % images.length;
+              showImage(currentIndex);
+            }
+          
+            function prevImage() {
+              currentIndex = (currentIndex - 1 + images.length) % images.length;
+              showImage(currentIndex);
+            }
+          
+            prevBtn.addEventListener('click', () => {
+              prevImage();
+              resetAutoplay();
+            });
+          
+            nextBtn.addEventListener('click', () => {
+              nextImage();
+              resetAutoplay();
+            });
+          
+            function startAutoplay() {
+              intervalId = setInterval(nextImage, 4000); // Change every 4 seconds
+            }
+          
+            function resetAutoplay() {
+              clearInterval(intervalId);
+              startAutoplay();
+            }
+          
+            showImage(currentIndex);
+            startAutoplay();
+          </script>
+          
+    </section>
+    <section>
+      <h2>Our Story</h2>
+      <p>Are you here wondering who we are? How we got here to pressure washing? Or why Lena is stunningly gorgeous? I don't have the answer for the last one, but I can help answer the rest. We are Lena and Taylor Wilson --  a recently married couple who really wants to own a house. Lena goes to BYU studying Family Life and has some big dreams of becoming a therapist for at risk teens. How cool and selfless is that? Taylor goes to UVU studying computer science *yawn*. Enough of that. We have always been hard workers that want to do the job right. We have always worked for other people and haven't seen much upward progression, so we said to heck with it and decided we should start a side business. We looked at different options like furniture flipping (which we also do), window cleaning (Taylor has background in that), but then we thought "Pffft... why would we do something we already know about and could go into with an idea of what we're doing?" So we went with pressure washing, which neither of us knew much about. Well, after months of research and planning, we made our first purchases and bought our pressure washer, hoses, chemicals, and a trailer. We got some hands on experience cleaning the houses of our family (shoutout to all of them!) and then we started marketing. We started feeling confident in our power washing abilities and decided to start serving clients, so we started marketing. WOW. We did not know what we were getting into. Our first day we went door knocking we just got rejected the whole day -- which we are used to (shout out TDWM and RCM) -- so we started focusing on other options like social media, a website, ads, etc. ---------- It has been quite the process to get to where we're at, but we have loved and enjoyed the process and thank each person that has helped us along the way. Above all, we give thanks to God for giving us the ability to make this dream happen. We are still learning and growing the business, but we love what we do and serving all of you! Thanks for joining the family and being part of the process!</p>
+    </section>
+  </main>
+  <footer>
+    <p>© 2025 Wils Wash. All rights reserved.</p>
+  </footer>
+</body>
+</html>
