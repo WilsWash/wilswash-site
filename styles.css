@@ -80,20 +80,31 @@ body {
 
   .before-after-container {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center;
+    align-items: flex-start;
     gap: 2rem;
     padding: 2rem;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    max-width: calc(330px + 330px + 2rem);
+    margin: 0 auto;
   }
 
-  .before-column, .after-column {
-    flex: 1;
+  .before-column,
+  .after-column {
+    flex: 1 1 300px;
     text-align: center;
   }
 
   .before-column img,
-  .after-column img,
+  .after-column img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3 / 4;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
   .other-photos img {
     width: 100%;
     height: auto;
