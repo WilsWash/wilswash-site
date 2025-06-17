@@ -8,7 +8,7 @@ body {
   }
 
   main {
-    margin: 0 4rem 0 4rem;
+    margin: 0 1.5rem 0 1.5rem;
   }
 
   header {
@@ -123,16 +123,25 @@ body {
     text-align: center;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 400px) {
     .before-after-container {
+      padding: 1rem;
+      flex-wrap: nowrap;
+      max-width: 100%;
       flex-direction: column;
       align-items: center;
     }
 
     .before-column,
     .after-column {
+      flex: 1 1 45vw;
+      max-width: 45vw;
+    }
+
+    .before-column img,
+    .after-column img {
       width: 100%;
-      max-width: 300px;
+      height: auto;
     }
 
     .other-photos {
