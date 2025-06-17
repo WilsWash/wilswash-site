@@ -125,7 +125,7 @@ body {
 
   @media (max-width: 400px) {
     .before-after-container {
-      padding: 1rem;
+      padding: 0;
       flex-wrap: nowrap;
       max-width: 100%;
       flex-direction: column;
@@ -148,6 +148,10 @@ body {
       justify-content: center;
       text-align: center;
       padding: 1rem;
+    }
+
+    main {
+      margin: 0 0.25rem 0 0.25rem;
     }
   }
 
