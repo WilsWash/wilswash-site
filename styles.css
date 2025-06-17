@@ -81,9 +81,10 @@ body {
   .before-after-container {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     gap: 2rem;
     padding: 2rem;
+    flex-wrap: wrap;
   }
 
   .before-column, .after-column {
@@ -109,6 +110,25 @@ body {
     gap: 1.5rem;
     padding: 2rem;
     text-align: center;
+  }
+
+  @media (max-width: 768px) {
+    .before-after-container {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .before-column,
+    .after-column {
+      width: 100%;
+      max-width: 300px;
+    }
+
+    .other-photos {
+      justify-content: center;
+      text-align: center;
+      padding: 1rem;
+    }
   }
 
   .form-container {
