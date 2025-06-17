@@ -332,9 +332,17 @@ button:hover {
   }
 
   ul {
-    list-style-type: square;
+    list-style-type: round;
     padding-left: 1.5rem;
     text-align: left;
+  }
+
+  @media (max-width: 400px) {
+    ul {
+      list-style-type: round;
+      padding-left: 0;
+      text-align: left;
+    }
   }
 
   form label {
