@@ -353,11 +353,9 @@ button:hover {
       text-align: left;
     }
 
-    /* .two-rows {
-      margin-left: 1%;
-      gap: 4px;
-      font-size: .8rem
-    } */
+    .two-rows {
+      font-size: .85rem
+    }
 
   }
 
