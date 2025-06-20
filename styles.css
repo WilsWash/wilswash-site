@@ -343,6 +343,10 @@ button:hover {
       padding-left: 0;
       text-align: left;
     }
+
+    li {
+      font-size: .75rem
+    }
   }
 
   form label {
