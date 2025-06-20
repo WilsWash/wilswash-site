@@ -337,6 +337,15 @@ button:hover {
     text-align: left;
   }
 
+  .two-rows {
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: repeat(3, auto);
+    gap: 10px;
+    padding: 0;
+    margin-left: 9%;
+}
+
   @media (max-width: 393px) {
     ul {
       list-style-type: disc;
@@ -344,9 +353,11 @@ button:hover {
       text-align: left;
     }
 
-    li {
-      font-size: .75rem
+    .two-rows {
+      margin-left: 2%;
+      gap: 4px;
     }
+
   }
 
   form label {
