@@ -15,7 +15,7 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     text-align: center;
-    padding: 1em 2em;
+/*     padding: 1em 2em; */
     height: auto;/*clamp(200px, 25vh, 400px);*/
     font-family: 'Montserrat', sans-serif;
     font-optical-sizing: auto;
