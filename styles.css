@@ -73,7 +73,7 @@ body {
   
   nav a:hover {
     text-decoration: none;
-    text-shadow: 5px 5px 5px rgba(0, 0, 0, 1);
+    scale: (90%);
   }
 
   /* IMAGES */
