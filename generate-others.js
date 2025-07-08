@@ -9,7 +9,7 @@ const files = fs.readdirSync(galleryDir).filter(file =>
 );
 
 const html = files.map(file => `
-  <div class="gallery-item">
+  <div class="gallery-item others">
     <img src="/src/images/other/${file}" alt="${file}" />
   </div>
 `).join('\n');
