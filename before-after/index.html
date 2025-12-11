@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Before and Afters</title>
   <link rel="stylesheet" href="/css/styles.css" />
+  <link rel="stylesheet" href="/css/photos.css" />
 </head>
 <body>
   <header>
@@ -30,45 +31,27 @@
         <h2>The pictures</h2>
     </section>
     <main>
-        <section id="gallery-befores" class="gallery-section">
-            <h2>Before</h2>
-            <div class="gallery" id="insert-befores"></div>
-        </section>
-        <section id="gallery-afters" class="gallery-section">
-            <h2>After</h2>
-            <div class="gallery" id="insert-afters"></div>
-        </section>
+        <div id="before-after-stack">
+          <section id="gallery-befores" class="gallery-secton">
+              <h2>Before</h2>
+              <div class="gallery" id="insert-befores"></div>
+          </section>
+          <section id="gallery-afters" class="gallery-secton">
+              <h2>After</h2>
+              <div class="gallery" id="insert-afters"></div>
+          </section>
+        </div>
         <section id="gallery-others" class="gallery-section">
             <h2>Other Work</h2>
             <div class="gallery" id="insert-others"></div>
         </section>
     </main>
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            const loadGallery = (id, file) => {
-            fetch(file)
-                .then(res => {
-                if (!res.ok) throw new Error(`Failed to load ${file}`);
-                return res.text();
-                })
-                .then(html => {
-                document.getElementById(id).innerHTML = html;
-                })
-                .catch(err => {
-                console.error(err);
-                document.getElementById(id).innerHTML = "<p>Gallery failed to load.</p>";
-                });
-            };
-            loadGallery("insert-befores", "/gallery-befores.html");
-            loadGallery("insert-afters", "/gallery-afters.html");
-            loadGallery("insert-others", "/gallery-others.html");
-        });
-        </script>
+    <script src="/js/pictures.js"></script>
 </body>
   </main>
 
   <footer>
-    <p>&copy; 2025 Wilson's Wasatch Wash</p>
+    <p>&copy; 2025 Wils Wash</p>
   </footer>
 </body>
 </html>

@@ -1,0 +1,16 @@
+{
+    "befores": [
+        "/images/befores/Before-Centerville-1.jpeg",
+        "/images/befores/Before-Centerville-2.jpeg",
+        "/images/befores/Before-Centerville-3.jpeg"
+    ],
+    "afters": [
+        "/images/afters/After-Centerville-1.jpeg",
+        "/images/afters/After-Centerville-2.jpeg",
+        "/images/afters/After-Centerville-3.jpeg"
+    ],
+    "others": [
+        "/images/other/Clean-Dirty-Centerville-1.jpeg",
+        "/images/other/Full-Walkway-Centerville-1.jpeg"
+    ]
+}

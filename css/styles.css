@@ -93,16 +93,14 @@ body {
 
   /* IMAGES */
 
-  .before-after-container {
+  .before-after-stack {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    gap: 2rem;
     padding: 2rem;
-    flex-wrap: nowrap;
-    flex-direction: row;
     max-width: calc(330px + 330px + 2rem);
     margin: 0 auto;
+    gap: 10px;
   }
 
   .gallery-section {
