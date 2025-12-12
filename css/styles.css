@@ -24,10 +24,9 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     text-align: center;
-    /* padding: 1em 2em; */
-    width: 100%;
+    
     margin: 0;
-    height: auto;/*clamp(200px, 25vh, 400px);*/
+    height: auto;
     font-family: 'Figtree', sans-serif;
     font-optical-sizing: auto;
     font-weight: 700;
@@ -148,13 +147,13 @@ body {
   #menu {
     z-index: 0;
     position: absolute;
-    width: 100vw;
     background: black;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     background: black;
     padding-left: 25px;
+    width: calc(100% - 25px);
 
 
     transition: transform 0.3s ease-in-out;
@@ -207,34 +206,6 @@ body {
   section {
     padding: 2em;
     text-align: center;
-  }
-
-  ul {
-    list-style-type: disc;
-    padding-left: 1.5rem;
-    text-align: left;
-  }
-
-  .two-rows {
-    display: grid;
-    grid-auto-flow: row;
-    grid-template-columns: repeat(2, auto);
-    gap: 10px;
-    padding: 0;
-    margin-left: 9%;
-}
-
-  @media (max-width: 600px) {
-    ul {
-      list-style-type: disc;
-      padding-left: 0;
-      text-align: left;
-    }
-
-    .two-rows {
-      font-size: .85rem
-    }
-
   }
 
   form label {

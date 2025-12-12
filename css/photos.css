@@ -25,3 +25,9 @@
 .others {
     margin: 10px;
 }
+
+@media (max-width: 600px) {
+    #gallery-afters, #gallery-befores {
+        padding: 50px 10px 50px 10px;
+    }
+}
