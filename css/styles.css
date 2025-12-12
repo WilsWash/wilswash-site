@@ -13,7 +13,7 @@ body {
   }
 
   main {
-    padding: 0 1.5rem;
+    /* padding: 0 1.5rem; */
   }
 
   h1, h2, h3 {
@@ -321,6 +321,7 @@ button:hover {
     padding: 2em;
     background: #ecf0f1;
     text-align: center;
+    margin: 0;
   }
   
   .btn {

@@ -1,0 +1,15 @@
+
+main {
+    align-items: center;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+img {
+    width: 20vw;
+    max-width: 250px;
+}
+
