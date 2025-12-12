@@ -1,11 +1,15 @@
-
+/* 
 main {
     align-items: center;
+    text-align: center;
+} */
+#centered-content {
     text-align: center;
 }
 
 h1 {
     text-align: center;
+    margin-top: 0;
 }
 
 img {

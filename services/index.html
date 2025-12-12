@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Services</title>
   <link rel="stylesheet" href="/css/styles.css" />
+  <link rel="stylesheet" href="/css/services.css" />
 </head>
 <body>
   <header>
@@ -13,7 +14,12 @@
         <img src="/images/Wils Wash Logo.png" alt="Wils Wash Pressure Washing Logo" class="logo">
       </a>
       <h1 class="site-title">Wils Wash</h1>
-      <nav>
+      <div id="menu-button" class="toggle-button">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav id="menu">
         <a href="/index/">Home</a>
         <a href="/services/">Services</a>
         <a href="/about/">About</a>
@@ -23,11 +29,10 @@
     </div>
   </header>
 
-  <main>
-    <section id="hero">
-    <h4>We offer a range of services to help you keep your home and property looking the best it can. We are committed to providing quality results and stand by our work, that's why if you aren't satisfied, we will keep coming back until the job is done properly.  From driveways and sidewalks to vinyl siding and brick, we deliver results to boost your best asset's curb appeal.</h4>
-</section>
 <main>
+    <section id="hero">
+      <h4>We offer a range of services to help you keep your home and property looking the best it can. We are committed to providing quality results and stand by our work, that's why if you aren't satisfied, we will keep coming back until the job is done properly.  From driveways and sidewalks to vinyl siding and brick, we deliver results to boost your best asset's curb appeal.</h4>
+    </section>
     <section>
         <h2>Services</h2>
         <hr>
@@ -69,13 +74,13 @@
             <li>Genola</li>
         </ul>
         <p>We’re based locally and ready to help your home look its best, wherever you are in Utah County!</p>
-        <a href="quote.html" class="btn">Get a Free Quote</a>
+        <a href="/quote/" class="btn">Get a Free Quote</a>
     </section>
 </main>
-  </main>
 
   <footer>
     <p>&copy; 2025 Wilson's Wasatch Wash</p>
   </footer>
+  <script src="/js/menu-button.js"></script>
 </body>
 </html>

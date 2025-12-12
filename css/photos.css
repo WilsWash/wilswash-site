@@ -16,7 +16,11 @@
     border-radius: 15px;
 }
 
-
+#insert-befores, #insert-afters {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+}
 
 .others {
     margin: 10px;
