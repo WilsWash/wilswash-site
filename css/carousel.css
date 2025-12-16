@@ -1,3 +1,12 @@
+.story, .story-section {
+    text-align: left;
+    text-indent: 2rem;
+}
+
+h2 {
+    text-align: center;
+}
+
 .carousel-section {
     padding: 2rem;
     text-align: center;
@@ -38,9 +47,8 @@
     background: #2c3e50;
     color: white;
     border: none;
-    width: 2.5rem;
-    height: 2.5rem;
-    padding: 0.5rem 0.7rem;
+    width: 2rem;
+    height: 2rem;
     border-radius: 50%;
     font-size: 1.2rem;
     cursor: pointer;
@@ -57,4 +65,34 @@
 
 .carousel-btn:hover {
     background: #1a5ec8;
+}
+
+
+@media (max-width: 600px) {
+    section {
+        margin: 0;
+        padding: 10px;
+    }
+
+    .carousel-btn {
+        display:block;
+        width: 150px;
+        border-radius: 0px;
+        font-size: 1rem;
+        flex-shrink: 0;
+    }
+    
+    .carousel-btn.prev {
+        position: relative;
+        top: 167px;
+        left: 170px;
+        border-radius: 0 0 0 8px;
+    }
+
+    .carousel-btn.next {
+        position: relative;
+        top: 167px;
+        right: 170px;
+        border-radius: 0 0 8px 0;
+    }
 }
